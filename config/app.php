@@ -156,6 +156,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * ping Pong module service provider
+        */
+        
+        'Pingpong\Modules\ModulesServiceProvider',
     ],
 
     /*
@@ -201,6 +206,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Module' => 'Pingpong\Modules\Facades\Module',
 
     ],
 
